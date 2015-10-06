@@ -1,6 +1,4 @@
 .container {
-  width: 100%;
-  margin: 0;
   margin-left: 50px; }
 
 ul {
@@ -9,6 +7,20 @@ ul {
   padding: 0;
   border: 1px solid lightblue; }
 
+li {
+  min-height: 200px;
+  transition: min-height 1s; }
+
+.minimize {
+  min-height: 0px; }
+
 h2 {
   background-color: lightblue;
-  margin: 0; }
+  margin: 0;
+  height: 30px; }
+
+h2:hover {
+  cursor: pointer; }
+
+p {
+  padding: 10px; }
