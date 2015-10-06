@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  margin: 0;
+  margin-left: 50px; }
+
+ul {
+  width: 500px;
+  list-style: none;
+  padding: 0;
+  border: 1px solid lightblue; }
+
+h2 {
+  background-color: lightblue;
+  margin: 0; }
