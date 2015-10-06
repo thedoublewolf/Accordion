@@ -8,19 +8,9 @@ body {
 			list-style: none;
 			padding: 0;
 			border: 1px solid lightblue;
-			// display: flex;
-			// flex-direction: column;
 		}
 			li {
-				min-height: 200px;
-				// flex-grow: 1;
-				// flex-shrink: 1;
-				// flex-basis: auto;
-				// overflow: hidden;
-				transition: min-height 1s;
-			}
-			.minimize {
-				min-height: 0px;
+				
 			}
 				h2 {
 					background-color: lightblue;
@@ -32,10 +22,12 @@ body {
 				}
 				p {
 					padding: 10px;
-					// min-height: 30px;
-					// flex-grow: 1;
-					// flex-shrink: 1;
-					// flex-basis: auto;
-					// overflow: hidden;
-					// transition: width 1s;
 				}
+				.close {
+					display: none;
+				}
+				.open {
+					display: block;
+				}
+			
+

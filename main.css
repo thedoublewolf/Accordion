@@ -7,13 +7,6 @@ ul {
   padding: 0;
   border: 1px solid lightblue; }
 
-li {
-  min-height: 200px;
-  transition: min-height 1s; }
-
-.minimize {
-  min-height: 0px; }
-
 h2 {
   background-color: lightblue;
   margin: 0;
@@ -24,3 +17,9 @@ h2:hover {
 
 p {
   padding: 10px; }
+
+.close {
+  display: none; }
+
+.open {
+  display: block; }
