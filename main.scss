@@ -1,33 +1,27 @@
 body {
 }
 	.container {
-		margin-left: 50px;
-	}
-		ul {
-			width: 500px;
-			list-style: none;
-			padding: 0;
-			border: 1px solid lightblue;
+		margin: 0 auto;
+		width: 500px;
+		border: 1px solid lightblue;
 		}
-			li {
-				
-			}
-				h2 {
-					background-color: lightblue;
-					margin: 0;
-					height: 30px;
-				}
-				h2:hover {
-					cursor: pointer;
-				}
-				p {
-					padding: 10px;
-				}
-				.close {
-					display: none;
-				}
-				.open {
-					display: block;
-				}
-			
+		h2 {
+			background-color: lightblue;
+			margin: 0;
+			height: 30px;
+		}
+		h2:hover {
+			cursor: pointer;
+		}
+		.close {
+		height: 0px;
+		transition: 1s;
+		overflow: hidden;
+		}
+		.open {
+		min-height: fit-content;
+		display: block;
+		overflow: hidden;
+		}
+		
 

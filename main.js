@@ -1,25 +1,22 @@
-
-
 $('.header1').on('click', function (event){
 	var toggle1 = $(event.target);
-	$('#ipsum1').removeClass('close');
-	console.log(toggle1);
+	$('#ipsum1').removeClass('close').addClass('open');
+	$('#ipsum2').removeClass('open').addClass('close');
+	$('#ipsum3').removeClass('open').addClass('close');
 });
 
 $('.header2').on('click', function (event){
-	var toggle2 = $(event.target);
-	$('.ipsum2').addClass('.open');
-	$('.ipsum2').removeClass('.close');
-	$('.ipsum3').addClass('.close');
-	console.log(toggle2);
+	var toggle1 = $(event.target);
+	$('#ipsum2').removeClass('close').addClass('open');
+	$('#ipsum1').removeClass('open').addClass('close');
+	$('#ipsum3').removeClass('open').addClass('close');
 });
 
 $('.header3').on('click', function (event){
-	var toggle3 = $(event.target);
-	$('.ipsum3').addClass('.open');
-	$('.ipsum1').addClass('.close');
-	$('.ipsum2').addClass('.close');
-	console.log(toggle3);
+	var toggle1 = $(event.target);
+	$('#ipsum3').removeClass('close').addClass('open');
+	$('#ipsum2').removeClass('open').addClass('close');
+	$('#ipsum1').removeClass('open').addClass('close');
 });
 
 

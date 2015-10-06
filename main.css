@@ -1,10 +1,6 @@
 .container {
-  margin-left: 50px; }
-
-ul {
+  margin: 0 auto;
   width: 500px;
-  list-style: none;
-  padding: 0;
   border: 1px solid lightblue; }
 
 h2 {
@@ -15,11 +11,12 @@ h2 {
 h2:hover {
   cursor: pointer; }
 
-p {
-  padding: 10px; }
-
 .close {
-  display: none; }
+  height: 0px;
+  transition: 1s;
+  overflow: hidden; }
 
 .open {
-  display: block; }
+  min-height: fit-content;
+  display: block;
+  overflow: hidden; }
