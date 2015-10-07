@@ -1,27 +1,61 @@
-body {
-}
-	.container {
-		margin: 0 auto;
-		width: 500px;
-		border: 1px solid lightblue;
-		}
-		h2 {
-			background-color: lightblue;
-			margin: 0;
-			height: 30px;
-		}
-		h2:hover {
-			cursor: pointer;
-		}
-		.close {
-		height: 0px;
-		transition: 1s;
-		overflow: hidden;
-		}
-		.open {
-		min-height: fit-content;
-		display: block;
-		overflow: hidden;
-		}
-		
+// Cool fonts
+$nice: 'Voltaire', sans-serif;
 
+// Cool colors
+$orange: #ff5722;
+$white: #ffffff;
+$grey: #9e9e9e;
+
+h1 {
+	font-family: $nice;
+	color: $orange;
+	text-align: center;
+}
+
+.container {
+	margin: 20px auto;
+	width: 500px;
+	border: 1px solid $grey;
+	border-radius: 5px;
+	}
+	h2 {
+		background-color: $grey;
+		color: $white;
+		font-family: $nice;
+		margin: 0;
+		text-indent: 10px;
+		height: 30px;
+	}
+	h2:hover {
+		cursor: pointer;
+		background-color: lighten($grey, 10%);
+	}
+	p {
+		margin: 5px;
+		font-weight: 300;
+	}
+	.close {
+		height: 0px;
+		overflow: scroll;
+		transition: height 1s;
+	}
+	.open {
+		height: 200px;
+		display: block;
+		overflow: scroll;
+		transition: height 1s;
+	}
+	.reset {
+		color: $grey;
+		border: 1px solid $grey;
+		border-radius: 5px;
+		width: 40px;
+		padding: 15px;
+		margin: auto;
+		text-align: center;
+	}
+	.reset:hover {
+		border: 1px solid lighten($grey, 20%);
+		color: lighten($grey, 20%);
+		cursor: pointer;
+	}
